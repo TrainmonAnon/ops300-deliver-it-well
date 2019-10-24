@@ -30,5 +30,17 @@ namespace ops300_deliver_it_wellTests
 
             Assert.Equal(expectedMessage, contactMessage);
         }
+        
+        [Fact]
+        public void IndexMessageTest()
+        {
+            string expectedMessage = "Hello World";
+            IndexModel contact = new IndexModel();
+
+            contact.OnGet();
+            string contactMessage = contact.Message;
+
+            Assert.Equal(expectedMessage, contactMessage);
+        }
     }
 }
