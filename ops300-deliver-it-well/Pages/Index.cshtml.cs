@@ -9,9 +9,11 @@ namespace ops300_deliver_it_well.Pages
 {
     public class IndexModel : PageModel
     {
+        public string Message { get; set; }
+        
         public void OnGet()
         {
-
+            Message = "Hello World";
         }
     }
 }
